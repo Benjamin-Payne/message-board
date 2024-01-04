@@ -1,0 +1,16 @@
+extends layout 
+
+block content
+
+  a(href='/') Back
+  form(method='post', action='/new')
+    h1= title 
+
+    label(for='name') Enter Your Name: 
+    input(type='text', name='name', id='name')
+
+    label(for='message') Enter Your Message: 
+    input(type='text', name='message', id='message')
+
+    button(type='submit') Submit Message
+
